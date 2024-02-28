@@ -1,0 +1,279 @@
+<html>
+<head>
+<title>SRB20YA - Source Code Changes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="icon" href="/favicon.ico">
+</head>
+
+<body bgcolor="#000000" link="#3333FF" vlink="#9933CC" alink="#FF3333" text="#FFFFFF">
+<h1 align="center"><b><i>Sonic Robo Blast 20 Years Ago</i></b></h1>
+<table width="100%" border="1">
+  <tr>
+    <td height="32"><i><a href="/index.html">Home</a></i></td>
+    <td height="32"><i><font color="#FF0000"><a href="/computers.htm">Computers</a></font></i></td>
+    <td height="32"><i><a href="/download.htm">Download</a></i></td>
+    <td height="32"><i><font color="#FF0000"><a href="/20ya.htm">Anniversaries</a></font></i></td>
+    <td height="32"><i><a href="/mods/main.htm">Coming Soon!</a></i></td>
+  </tr>
+</table>
+
+<h2><font color="#ff9999"><i><b>September 13th, 1999</b></i></font></h2>
+<h3><font color="#ff9999"><b>SRC\R_THINGS.H</b></font></h3>
+<p><font color="#ff9999">#define DEFAULTSKIN  "sonic"   // Changed by Tails: 9-13-99</font></p>
+<h3><font color="#ff9999"><b>SRC\INFO.C</b></font></h3>
+<p><font color="#ff9999">1,             // spawnhealth -- changed to 1 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">32,              // reactiontime -- changed to 32 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">4,              // speed -- changed to 4 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">1,             // spawnhealth -- changed to 1 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">32,              // reactiontime -- changed to 32 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">1,             // spawnhealth -- changed to 1 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">2,            // spawnhealth -- changed to 2 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">54*FRACUNIT,            // radius -- changed to 54 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">48*FRACUNIT,            // height -- changed to 48 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">1,            // spawnhealth -- changed to 1 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">4*FRACUNIT,            // radius -- changed to 4 by Tails : 9-13-99</font></p>
+<p><font color="#ff9999">4*FRACUNIT,             // height -- changed to 4 by Tails : 9-13-99</font></p>
+<h3><font color="#ff9999"><b>SRC\P_USER.C</b></font></h3>
+<p><font color="#ff9999">movepushforward >>= 2; // Proper air movement - Changed by Tails: 9-13-99</font></p>
+<p><font color="#ff9999">player->mo->momz = JUMPGRAVITY*1.5; // Proper Jumping - Changed by Tails: 9-13-99</font></p>
+<hr>
+<h2><font color="#ff9999"><i><b>September 14th, 1999</b></i></font></h2>
+<h3><font color="#ff9999"><b>SRC\INFO.H</b></font></h3>
+<p><font color="#ff9999">S_PLAY_RUN5, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_RUN6, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_RUN7, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_RUN8, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK3, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK4, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK5, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK6, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK7, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK8, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK9, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK10, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK11, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_ATK12, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_DIE7, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_DIE8, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_DIE9, // Tails 9-14-99</font></p>
+<p><font color="#ff9999">S_PLAY_DIE10, // Tails 9-14-99</font></p>
+<h3><font color="#ff9999"><b>SRC\D_MAIN.C</b></font></h3>
+<p><font color="#ff9999">pagetic = TICRATE * 15; // Changed by Tails: 9-14-99</font></p>
+<h3><font color="#ff9999"><b>SRC\D_MAIN.C</b></font></h3>
+<p><font color="#ff9999">"You found a chaos emerald!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Invincibility!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Greenflower Zone Act 1", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Greenflower Zone Act 2", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Greenflower Zone Act 3", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Techno Hill Zone Act 1", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Techno Hill Zone Act 2", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Techno Hill Zone Act 3", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Deep Sea Zone Act 1", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Deep Sea Zone Act 2", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Deep Sea Zone Act 3", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Mine Maze Zone Act 1", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Mine Maze Zone Act 2", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Mine Maze Zone Act 3", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Rocky Mountain Zone Act 1", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Rocky Mountain Zone Act 2", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Rocky Mountain Zone Act 3", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Red Volcano Zone Act 1", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Red Volcano Zone Act 2", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Red Volcano Zone Act 3", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Dark City Zone Act 1", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Dark City Zone Act 2", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Dark City Zone Act 3", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Doomship Zone Act 1", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Doomship Zone Act 2", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Doomship Zone Act 3", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Robotnirock Zone Act 1", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Robotnirock Zone Act 2", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Robotnirock Zone Act 3", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"The Final Fight Zone!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Wood Zone", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Dust Hill Zone", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Speed Highway at Dawn", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Hidden Palace Zone", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"I'm ready to kick ro-butt!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"You stink!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Next time I'll win!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"IMPOSSIBLE SELECTION, you stupid-head!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"CRAWLA", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"SUPER CRAWLA", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"MINI B-EGGMAN", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"MINVS", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"DRILLAKILLA", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"ROCKBOT", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"DETON", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Eggman's tied explosives\nto your girlfriend, and\nwill activate them if\nyou press the 'Y' key!\nPress 'N' to save her!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"What would Tails say if\nhe saw you quitting the game?", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Hey!\nWhere do ya think you're goin'?", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Forget your studies!\nPlay some more!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"You're trying to say you\nlike Sonic Adventure better than\nthis, right?", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"don't leave yet -- there's a\nsuper emerald around that corner!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"You'd rather work than play?", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"go ahead and leave. see if i care...\n*sniffle*", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"If you leave now,\nEggman will take over the world!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Don't quit!\nThere are animals\nto save!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Aw c'mon, just bop\na few more robots!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Just because you can't\nget that Chaos Emerald...", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"If you leave, i'll use\nmy spin attack on you!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Don't go!\nYou might find the hidden\nlevels!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Hit the 'N' key sonic!\nThe 'N' key!", // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999"> "                       Sonic Robo Blast II!\n"                                  // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"                       by Sonic Team Junior\n"                                  // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"                      http://stjr.segasonic.net\n"                              // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"      This is a modified version. Go to our site for the original.\n"           // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"                   We hope you enjoy this game as\n"                            // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"                     much as we did making it!\n"                               // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">"Sonic Robo Blast 2: V1.0", // Changed by Tails: 9-14-99</font></p>
+<h3><font color="#ff9999"><b>SRC\INFO.C</b></font></h3>
+<p><font color="#ff9999">{SPR_PLAY,4,2,{NULL},S_PLAY_RUN5,0,0},      // S_PLAY_RUN4 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,5,2,{NULL},S_PLAY_RUN6,0,0},      // S_PLAY_RUN5 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,6,2,{NULL},S_PLAY_RUN7,0,0},      // S_PLAY_RUN6 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,7,2,{NULL},S_PLAY_RUN8,0,0},      // S_PLAY_RUN7 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,8,2,{NULL},S_PLAY_RUN1,0,0},      // S_PLAY_RUN8 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,11,1,{NULL},S_PLAY_ATK4,0,0},  // S_PLAY_ATK3 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,12,1,{NULL},S_PLAY_ATK5,0,0},  // S_PLAY_ATK4 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,13,1,{NULL},S_PLAY_ATK6,0,0},  // S_PLAY_ATK5 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,14,1,{NULL},S_PLAY_ATK7,0,0},  // S_PLAY_ATK6 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,15,1,{NULL},S_PLAY_ATK8,0,0},  // S_PLAY_ATK7 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,16,1,{NULL},S_PLAY_ATK9,0,0},  // S_PLAY_ATK8 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,17,1,{NULL},S_PLAY_ATK10,0,0},  // S_PLAY_ATK9 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,18,1,{NULL},S_PLAY_ATK11,0,0},  // S_PLAY_ATK10 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,19,1,{NULL},S_PLAY_ATK3,0,0},  // S_PLAY_ATK11 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,20,1,{NULL},S_PLAY_ATK3,0,0},  // S_PLAY_ATK12 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,20,24,{NULL},S_PLAY_PAIN2,0,0},     // S_PLAY_PAIN // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,21,24,{A_Pain},S_PLAY,0,0}, // S_PLAY_PAIN2 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,22,8,{NULL},S_PLAY_DIE2,0,0},     // S_PLAY_DIE1 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,23,7,{A_PlayerScream},S_PLAY_DIE3,0,0},   // S_PLAY_DIE2 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,24,6,{A_Fall},S_PLAY_DIE4,0,0},   // S_PLAY_DIE3 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,25,5,{NULL},S_PLAY_DIE5,0,0},    // S_PLAY_DIE4 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,26,5,{NULL},S_PLAY_DIE6,0,0},    // S_PLAY_DIE5 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,27,5,{NULL},S_PLAY_DIE7,0,0},    // S_PLAY_DIE6 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,28,2,{NULL},S_PLAY_DIE8,0,0},    // S_PLAY_DIE7 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,28,2,{NULL},S_PLAY_DIE9,0,0},    // S_PLAY_DIE8 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,28,2,{NULL},S_PLAY_DIE10,0,0},    // S_PLAY_DIE9 // Tails 9-14-99</font></p>
+<p><font color="#ff9999">{SPR_PLAY,28,-1,{NULL},S_NULL,0,0}, // S_PLAY_DIE10 // Tails 9-14-99</font></p>
+<h3><font color="#ff9999"><b>SRC\P_USER.C</b></font></h3>
+<p><font color="#ff9999">P_Thrust (player->mo, player->mo->angle, 5*3072); // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">P_Thrust (player->mo, player->mo->angle, cmd->forwardmove*3072); // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">P_Thrust (player->mo, player->mo->angle-ANG90, cmd->sidemove*3072); // Changed by Tails: 9-14-99</font></p>
+<p><font color="#ff9999">movepushforward = cmd->forwardmove * 3072; // Changed by Tails: 9-14-99</font></p>
+<hr>
+<h2><font color="#ff9999"><i><b>September 15th, 1999</b></i></font></h2>
+<h3><font color="#ff9999"><b>SRC\INFO.H</b></font></h3>
+<p><font color="#ff9999">S_BON1F, //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_BON1G, //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_BON1H, //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_BON1I, //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_BON1J, //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_BON1K, //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_BON1L, //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_BON1M, //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_BON1N, //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_BON1O,  //Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_TECH2LAMP5, // Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_TECH2LAMP6, // Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_TECH2LAMP7, // Tails 9-15-99</font></p>
+<p><font color="#ff9999">S_TECH2LAMP8, // Tails 9-15-99</font></p>
+<h3><font color="#ff9999"><b>SRC\P_MOBJ.H</b></font></h3>
+<p><font color="#ff9999">// Jumping Status... Added by Tails 9-15-99 Spin Attack</font></p>
+<h3><font color="#ff9999"><b>SRC\INFO.C</b></font></h3>
+<p><font color="#ff9999">{SPR_BSPI,32768,80,{A_FaceTarget},S_BSPI_ATK2,0,0}, // S_BSPI_ATK1 //Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BSPI,32774,32,{A_BspiAttack},S_BSPI_ATK3,0,0},  // S_BSPI_ATK2 //Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BSPI,32775,32,{NULL},S_BSPI_ATK4,0,0},  // S_BSPI_ATK3 //Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BSPI,32775,8,{A_SpidRefire},S_BSPI_ATK2,0,0},  // S_BSPI_ATK4 //Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,0,2,{NULL},S_BON1A,0,0},  // S_BON1 // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,1,2,{NULL},S_BON1B,0,0},  // S_BON1A // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,2,2,{NULL},S_BON1C,0,0},  // S_BON1B // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,3,2,{NULL},S_BON1D,0,0},  // S_BON1C // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,4,2,{NULL},S_BON1E,0,0},  // S_BON1D // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,5,2,{NULL},S_BON1F,0,0},   // S_BON1E // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,6,2,{NULL},S_BON1G,0,0},   // S_BON1F // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,7,2,{NULL},S_BON1H,0,0},   // S_BON1G // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,8,2,{NULL},S_BON1I,0,0},   // S_BON1H // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,9,2,{NULL},S_BON1J,0,0},   // S_BON1I // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,10,2,{NULL},S_BON1K,0,0},   // S_BON1J // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,11,2,{NULL},S_BON1L,0,0},   // S_BON1K // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,12,2,{NULL},S_BON1M,0,0},   // S_BON1L // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,13,2,{NULL},S_BON1N,0,0},   // S_BON1M // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,14,2,{NULL},S_BON1O,0,0},   // S_BON1N // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_BON1,15,2,{NULL},S_BON1,0,0},   // S_BON1O // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_TLP2,32771,2,{NULL},S_TECH2LAMP5,0,0},  // S_TECH2LAMP4 // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_TLP2,32772,2,{NULL},S_TECH2LAMP6,0,0},  // S_TECH2LAMP5 // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_TLP2,32773,2,{NULL},S_TECH2LAMP7,0,0},  // S_TECH2LAMP6 // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_TLP2,32774,2,{NULL},S_TECH2LAMP8,0,0},  // S_TECH2LAMP7 // Tails 9-15-99</font></p>
+<p><font color="#ff9999">{SPR_TLP2,32775,2,{NULL},S_TECH2LAMP,0,0},  // S_TECH2LAMP8 // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // seesound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // painsound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // deathsound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">24*FRACUNIT,            // radius // Tails 9-15-99</font></p>
+<p><font color="#ff9999">32*FRACUNIT,            // height // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // activesound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // seesound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,              // attacksound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // painsound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // deathsound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">24*FRACUNIT,            // radius // Tails 9-15-99</font></p>
+<p><font color="#ff9999">32*FRACUNIT,            // height // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // activesound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,            // missilestate // Tails 9-15-99</font></p>
+<p><font color="#ff9999">20,              // speed // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // seesound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // painsound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // deathsound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // speed // Tails 9-15-99</font></p>
+<p><font color="#ff9999">0,             // activesound // Tails 9-15-99</font></p>
+<p><font color="#ff9999">16*FRACUNIT,            // radius //Tails 9-15-99</font></p>
+<p><font color="#ff9999">24*FRACUNIT,            // height //Tails 9-15-99</font></p>
+<p><font color="#ff9999">MF_SPECIAL|MF_COUNTITEM|MF_NOGRAVITY,                // flags //Tails 9-15-99</font></p>
+<p><font color="#ff9999">1000,            // mass // Tails 9-15-99</font></p>
+<p><font color="#ff9999">MF_NOCLIP|MF_FLOAT|MF_NOGRAVITY|MF_NOSECTOR,               // flags // Tails 9-15-99</font></p>
+<p><font color="#ff9999">16*FRACUNIT,            // radius //Tails 9-15-99</font></p>
+<p><font color="#ff9999">24*FRACUNIT,            // height //Tails 9-15-99</font></p>
+<p><font color="#ff9999">MF_SPECIAL|MF_COUNTITEM,                // flags //Tails 9-15-99</font></p>
+<h3><font color="#ff9999"><b>SRC\P_MAP.C</b></font></h3>
+<p><font color="#ff9999">extern mobj_t*  blockthing; // Tails 9-15-99 Spin Attack</font></p>
+<p><font color="#ff9999">// Tails 9-15-99 Spin Attack</font></p>
+<h3><font color="#ff9999"><b>SRC\P_MAPUTL.C</b></font></h3>
+<p><font color="#ff9999">mobj_t* blockthing; // Tails 9-15-99 Spin Attack</font></p>
+<p><font color="#ff9999">blockthing = NULL; // Tails 9-15-99 Spin Attack</font></p>
+<p><font color="#ff9999">{ // Tails 9-15-99 Spin Attack</font></p>
+<p><font color="#ff9999">blockthing = mobj; // Tails 9-15-99 Spin Attack</font></p>
+<h3><font color="#ff9999"><b>SRC\P_MOBJ.C</b></font></h3>
+<p><font color="#ff9999">if (mo->z <= mo->floorz) // Tails 9-15-99 Spin Attack</font></p>
+<p><font color="#ff9999">mo->eflags |= MF_JUSTHITFLOOR; // Tails 9-15-99 Spin Attack</font></p>
+<p><font color="#ff9999">if(mo->eflags & MF_JUMPED) // Tails 9-15-99 Spin Attack</font></p>
+<p><font color="#ff9999">mo->eflags -= MF_JUMPED; // Tails 9-15-99 Spin Attack</font></p>
+<h3><font color="#ff9999"><b>SRC\P_SPEC.C</b></font></h3>
+<p><font color="#ff9999">P_DamageMobj (player->mo, NULL, NULL, 200); // Tails 9-15-99</font></p>
+<p><font color="#ff9999">sector->special = 4; // Tails 9-15-99</font></p>
+<h3><font color="#ff9999"><b>SRC\P_SPEC.C</b></font></h3>
+<p><font color="#ff9999">if(!(player->mo->eflags & 32)) // Tails 9-15-99 Spin Attack</font></p>
+<p><font color="#ff9999">player->mo->eflags += 32; // Tails 9-15-99 Spin Attack</font></p>
+<hr>
+<h2><font color="#ff9999"><i><b>September 21st, 1999</b></i></font></h2>
+<h3><font color="#ff9999"><b>SRC\INFO.C</b></font></h3>
+<p><font color="#ff9999">32*FRACUNIT,            // radius Tails 9-21-99</font></p>
+<hr>
+<h2><font color="#ff9999"><i><b>September 24th, 1999</b></i></font></h2>
+<h3><font color="#ff9999"><b>SRC\M_MENU.C</b></font></h3>
+<p><font color="#ff9999">char      skullName[8][9] = {"M_SKULL1","M_SKULL2","M_SKULL3","M_SKULL4","M_SKULL5","M_SKULL6","M_SKULL7","M_SKULL8"}; // Tails 9-24-99 Future anims?</font></p>
+<h3><font color="#ff9999"><b>SRC\P_MOBJ.C</b></font></h3>
+<p><font color="#ff9999">mo->momz = FixedMul (mo->momz, FRICTION*1.02); // Tails 9-24-99</font></p>
+<h3><font color="#ff9999"><b>SRC\P_USER.C</b></font></h3>
+<p><font color="#ff9999">//      else //water content // Tails 9-24-99</font></p>
+<p><font color="#ff9999">//     player->mo->momz = JUMPGRAVITY*1.5; // Tails 9-24-99</font></p>
+<p><font color="#ff9999">P_SetMobjState (player->mo, S_PLAY_ATK3); // Tails 9-24-99</font></p>
+<hr>
+<h2><font color="#ff9999"><i><b>September 28th, 1999</b></i></font></h2>
+<h3><font color="#ff9999"><b>SRC\INFO.C</b></font></h3>
+<p><font color="#ff9999">{SPR_PLAY,0,-1,{NULL},S_NULL,0,0},  // S_PLAY // Tails 9-28-99 stand</font></p>
+<p><font color="#ff9999">{SPR_PLAY,9,4,{NULL},S_PLAY_ATK2,0,0},  // S_PLAY_ATK1 // Tails 9-28-99  special</font></p>
+<p><font color="#ff9999">{SPR_PLAY,10,4,{NULL},S_PLAY_ATK1,0,0},  // S_PLAY_ATK2 // Tails 9-28-99  special</font></p>
+
+<!--
+<h2><font color="#ffbb77"><i><b>2000</b></i></font></h2>
+<h3><font color="#ffbb77"><b>I can see you looking in the HTML code! Get out of here!</b></font></h3>
+<p><font color="#ffbb77">Please. Stop attempting to find hidden stuff in the code. It's not healthy for you. Shouldn't you be stopping Robotnik?</font></p>-->
